@@ -1,0 +1,35 @@
+# ─── Terraform ───────────────────────────────────────────────
+# State files: can contain SECRETS (passwords, keys) in plain text.
+# Never commit these. In real teams, state lives in a remote backend.
+*.tfstate
+*.tfstate.*
+
+# Provider plugins + cache: huge, machine-specific, re-downloaded by `terraform init`.
+.terraform/
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files often hold secrets. Commit *.example versions instead.
+*.tfvars
+*.tfvars.json
+
+# NOTE: .terraform.lock.hcl is intentionally NOT ignored —
+# it locks provider versions and SHOULD be committed.
+
+# ─── Go ──────────────────────────────────────────────────────
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary / coverage output
+*.test
+*.out
+
+# ─── Editor / OS ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
